@@ -25,7 +25,6 @@ function LayLoaiXe(){
   return ketqua;
 }
 
-
 function TinhTien(){
   var laySoKM = getMyEle('soKM').value;
   laySoKM = parseFloat(laySoKM);
@@ -55,8 +54,6 @@ function TinhTien(){
   var kmCaoUberBlack = 14000;
   var kmHUberBlack =  km1UberBlack + 20 * km21UberBlack;
   var giaThoiGianChoUberBlack = 4000;
-
-
 
   switch (loaiXe)
   {
@@ -88,5 +85,12 @@ function TinhTien(){
           }
       break;
   }
- spanTien.innerHTML = thanhTien;
+  
+  var tdSoKM = getMyEle('tdSoKM');
+  var tdThoiGianCho = getMyEle('tdThoiGianCho');
+  var tdTongTien = getMyEle('tdTongTien');
+  tdSoKM.innerHTML = laySoKM;
+  tdThoiGianCho.innerHTML = layThoiGianCho;
+  tdTongTien.innerHTML = thanhTien + ' VND';
+  spanTien.innerHTML = thanhTien;
 }

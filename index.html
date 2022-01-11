@@ -131,6 +131,54 @@
           </div>
         </form>
 
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">HOÁ ĐƠN</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table w-300">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nội dung</th>
+                      <th scope="col">VND</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Số KM</td>
+                      <td id="tdSoKM">0</td>
+                    </tr>
+                    <tr>
+                      <td>Thời gian chờ ( phút )</td>
+                      <td id="tdThoiGianCho">0</td>
+                    </tr>
+                    <tr class="bg-dark text-white">
+                      <td>Tổng tiền</td>
+                      <td id="tdTongTien">0 VND</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
         <div style="clear: both"></div>
         <div id="divThanhTien" class="dongia">
           <h2>
@@ -142,6 +190,11 @@
       </div>
     </div>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
     <!--===============================================================================================-->
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
